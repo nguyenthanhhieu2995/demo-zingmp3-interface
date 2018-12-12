@@ -13,13 +13,31 @@ body {
     min-width: 718px;
     padding-right: 0;
 }
-
 header {
 	background: #1c1c1c;
 	min-width: 1000px;
 }
+li {
+	list-style: none;
+}
+nav {
+    width: 100%;
+    min-width: 1000px;
+    height: 40px;
+}
+ul {
+	margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+	color: #721799;
+}
 .group {
 	display: block;
+	clear: both;
 }
 .group:after, .pull-left:after {
     content: "";
@@ -70,6 +88,10 @@ header {
     white-space: nowrap;
     height: 29px;
 }
+.section-search .search .input-btn:hover {
+    opacity: .9;
+	background: #f2f2f2;
+}
 textarea:focus, input:focus {
     outline: 0;
 }
@@ -97,9 +119,7 @@ textarea:focus, input:focus {
 .hide-text {
     border: 0;
     background-color: transparent;
-    color: transparent;
     text-shadow: none;
-    font: 0/0 a;
 }
 .btn {
     width: 34px;
@@ -126,4 +146,67 @@ header .nav-account a:hover {
 }
 a, a:hover, a:active, a:focus, button:focus {
     outline: 0;
+}
+nav .container {
+    background: #e4e4e4;
+    width: 1000px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.six-color-bg, nav {
+    position: relative;
+    z-index: 1234;
+    background: #e4e4e4;
+}
+nav .main-nav>li {
+    float: left;
+    position: relative;
+}
+nav .main-nav li a:hover {
+    text-decoration: none;
+}
+.main-nav li a {
+    color: #333;
+}
+nav .main-nav li a {
+    line-height: 32px;
+    padding: 0 20px;
+    display: block;
+    white-space: nowrap;
+}
+nav .main-nav>li>a {
+    line-height: 39px;
+    font-weight: 400;
+    padding: 0 15px;
+}
+nav .main-nav .separation {
+    width: 1px;
+    height: 20px;
+    margin: 10px 5px 0;
+    background: #ccc;
+}
+nav .main-nav>li {
+    float: left;
+    position: relative;
+}
+nav .main-nav>li:hover {
+    background: #fff;
+}
+.toggle-ads {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    font-family: "Open Sans","segoe ui",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}
+.toggle-ads i {
+    position: relative;
+    right: 5px;
+}
+.icon-cloud {
+	font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    color: #721799;
 }
