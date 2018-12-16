@@ -1,11 +1,15 @@
 * {
 	box-sizing: border-box;
 }
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, th, td {
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     background: #f2f2f2;
     color: #000;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal!important;
     font-size: 14px;
     font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
@@ -332,5 +336,176 @@ nav .main-nav>li:hover {
 	overflow: hidden;
 	width: 650px;
 	height: 280px;
+    margin-bottom: 5px;
+}
+.list-graph {
+    border-bottom: solid 1px #ECECEC;
+    padding: 10px;
+}
+.list-graph:last-child {
+    border-bottom: none;
+}
+.list-graph-item {
+    display: grid;
+    grid-template-columns: 70px 60px auto 110px 80px;
+    grid-template-rows: 60px;
+}
+.avatar-song {
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+.small-circle-play {
+    position: absolute;
+    top: 34%;
+    right: 38%;
+    color: #fff;
+    transform: scale(0);
+    transition: all .3s ease-in;
+}
+a:hover .img-thumb {
+    opacity: .65;
+}
+a:hover .small-circle-play {
+    display: block;
+    opacity: 1;
+    transform: scale(1.5);
+}
+.img-thumb {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: all .3s ease-in;
+}
+.list-graph-item .info {
+    padding-left: 10px;
+}
+.info .song-name {
+    margin-bottom: 1px;
+    font-size: 14px;
+    line-height: 1.67;
+    color: #000;
+    font-weight: 600;
+}
+.sub-title {
+    margin-bottom: 2px;
+    font-size: 12px;
+    line-height: 1.43;
+}
+.sub-title a {
+    color: #666;
+}
+.num-song {
+    height: 60px;
+    line-height: 60px;
+    color: #666;
+    font-size: 16px;
+}
+.label-rank {
+    padding-top: 14px;
+    color: #666;
+    font-size: 18px;
+    position: relative;
+}
+.line-rank {
+    font-size: 13px;
+    font-weight: 800;
+    position: absolute;
+    left: 32px;
+    top: 18px;
+    color: #666;
+}
+.top-1 {
+    color: #4a90e2;
+}
+.top-2 {
+    color: #00AF64;
+}
+.top-3 {
+    color: #D8541C;
+}
+.title-section {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: purple;
+}
+.list-music-theme {
+    display:grid;
+    grid-template-columns: repeat(4, 151px [col-start]);
+    grid-template-rows: 220px 220px;
+    grid-column-gap: 14px; 
+    grid-row-gap: 14px; 
+}
+.album-item {
+}
+.album-link {
+    display: block;
+    position: relative;
+    background-color: #000;
+    margin-bottom: 8px;
+}
+.normal-circle-play {
+    position: absolute;
+    top: 42%;
+    right: 45%;
+    color: #fff;
+    transform: scale(0);
+    transition: all .3s ease-in;
+}
+a:hover .normal-circle-play {
+    display: block;
+    opacity: 1;
+    transform: scale(3);
+}
+.des h3 {
+    font-weight: 500;
+    font-size: 100%;
+}
+.rest-weekend h2 {
+    margin-bottom: 20px;
+}
+.view-more {
+    margin: 10px 0px 20px;
+    display: block;
+    color: #707070;
+}
+.title-section a {
+    color: purple;
+}
+.icon-play {
+    margin-left: 10px;
+    color: #8d8d8d!important;
+}
+.icon-play:hover i {
+    color: purple;
 }
 
+
+.weekly-item-song {
+    display: flex;
+    align-items: center;
+    padding: 12px 0px;
+    border-bottom: 1px solid #EEE;
+}
+.weekly-item-song .number {
+    font-size: 20px;
+    padding: 0px 8px;
+}
+.weekly-item-song .info {
+    font-size: 14px;
+    flex-grow: 1;
+}
+.weekly-item-song .song-title {
+    margin-bottom: 8px;
+}
+.weekly-item-song .single {
+    font-size: 13px;
+    color:#999;
+}
+.weekly-item-song .view-count {
+    font-size: 13px;
+    color:#999;
+}
