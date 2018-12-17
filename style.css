@@ -1,9 +1,13 @@
 * {
 	box-sizing: border-box;
 }
-div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, th, td {
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-size: 100%;
 }
 body {
     margin: 0;
@@ -508,4 +512,64 @@ a:hover .normal-circle-play {
 .weekly-item-song .view-count {
     font-size: 13px;
     color:#999;
+}
+.tab-nav {
+    display: flex;
+    overflow: hidden;
+}
+.tab-nav li {
+    width: 33.3333333%;
+    height: 42px;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    line-height: 42px;
+    background: #ecf0f1;
+    color: #333;
+}
+.tab-nav li.active {
+    border-top: 2px solid #721799;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    background: #fff;
+}
+.tab-nav li:hover {
+    border-top: 2px solid #721799;
+}
+.rank-1 {
+    position: relative;
+    margin: 12px 0px;
+    padding:0;
+    border-bottom: 1px solid #EEE;
+}
+.rank-1 img {
+    width: 300px;
+    height: 126px;
+}
+.mask {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom,transparent 0%,rgba(0,0,0,0.8) 100%);
+}
+.description {
+    position: absolute;
+    display: flex;
+    bottom: 4px;
+    width: 100%;
+    left: 0;
+    padding: 0 10px 10px;
+    color: #fff;
+    z-index: 1;
+}
+.description .number {
+    width: 16px;
+    font-size: 20px;
+    margin: 5px 16px 6px 2px;
+}
+.description .info {
+    width: 85%;
 }
